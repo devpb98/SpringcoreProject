@@ -13,6 +13,16 @@ public class LifecycleTest {
 		System.out.println(samosa);
 		
 		context.registerShutdownHook();
+		
+		System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+		Pepsi p1 = (Pepsi) context.getBean("p1");
+		System.out.println(p1);
+		
+		System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+		Chutney chutney = (Chutney) context.getBean("chutney");
+		System.out.println(chutney);
+		
+		
 	}
 
 }
