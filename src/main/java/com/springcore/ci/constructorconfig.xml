@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	https://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/spring-context.xsd">
+	
+	<bean class="com.springcore.ci.Addition" name="add">
+		<constructor-arg>
+			<value>22</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>23</value>
+		</constructor-arg>
+	</bean>
+	<bean class="com.springcore.ci.Person" name="person1">
+		<constructor-arg>
+			<value>Dev Prasad</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>23</value>
+		</constructor-arg>
+	</bean>
+
+</beans>
